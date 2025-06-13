@@ -1,0 +1,61 @@
+:root {
+
+    /* Fonts */
+    --font-family-header: Impact, Arial Black, Arial, sans-serif;
+    --font-family-body: system-ui, sans-serif;
+
+    --font-size-base: 1.6rem; /* 16px body text */
+
+    /* Headings (modular scale, 1.25) */
+    --font-size-xl: 7.2rem;
+    --font-size-h1: 4rem;   
+    --font-size-h2: 3.2rem; 
+    --font-size-h3: 2.6rem; 
+    --font-size-h4: 2rem;   
+    --font-size-h5: 1.6rem; 
+    --font-size-h6: 1.4rem; 
+
+    /* Font weights */
+    --font-weight-bold: 700;
+    --font-weight-semibold: 600;
+    --font-weight-medium: 500;
+    --font-weight-normal: 400;
+
+    /* Line heights */
+    --line-height-heading: 1.2;
+    --line-height-body: 1.6;
+
+    /* Brand Colors */
+    /* Primary - Soft Teal */
+    --color-primary-light: #a8dedd;
+    --color-primary:       #4cafad;
+    --color-primary-dark:  #357f7f;
+
+    /* Secondary - Warm Peach */
+    --color-secondary-light: #ffe0b3;
+    --color-secondary:       #ffb85f;
+    --color-secondary-dark:  #cc8c32;
+
+    /* Accent - Coral Red/Pink */
+    --color-accent-light: #ff9c9c;
+    --color-accent:       #ff6b6b;
+    --color-accent-dark:  #cc3d3d;
+
+    /* Grays */
+    --gray-100: #f9f9f9;
+    --gray-200: #f0f0f0;
+    --gray-300: #e0e0e0;
+    --gray-400: #c2c2c2;
+    --gray-500: #a0a0a0;
+    --gray-600: #7a7a7a;
+    --gray-700: #555555;
+    --gray-800: #333333;
+    --gray-900: #1a1a1a;
+
+    /* Backgrounds & Text */
+    --color-background: var(--gray-100);
+    --color-surface: #ffffff;
+    --color-text: #1a1a1a;
+    --color-muted: var(--gray-600);
+}
+

@@ -1,0 +1,14 @@
+{
+  "name": "Blog Template",
+  "url": "https://vibecoding.com",
+  "author": {
+    "name": "First Last",
+    "email": "hello@email.com"
+  },
+  "description": "A blog website template built with 11ty.",
+  "social": {
+    "twitter": "https://twitter.com",
+    "youtube": "https://youtube.com",
+    "discord": "https://discord.gg"
+  }
+}
