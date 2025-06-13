@@ -1,0 +1,190 @@
+/* Decorative elements */
+.pixel-decoration {
+    position: absolute;
+    pointer-events: none;
+    z-index: 1;
+    opacity: 0.3;
+    mix-blend-mode: screen;
+    background-color: #666666;
+    border-radius: 2px;
+    box-shadow: 0 0 10px rgba(102, 102, 102, 0.2);
+}
+
+/* Hero section decorations */
+.hero-decoration-1 {
+    top: 15%;
+    left: 5%;
+    width: 4rem;
+    height: 4rem;
+    animation: float 8s ease-in-out infinite;
+    z-index: 2;
+}
+
+.hero-decoration-2 {
+    top: 25%;
+    right: 10%;
+    width: 6rem;
+    height: 6rem;
+    animation: float 10s ease-in-out infinite reverse;
+    z-index: 2;
+}
+
+.hero-decoration-3 {
+    top: 60%;
+    left: 15%;
+    width: 3rem;
+    height: 3rem;
+    animation: float 9s ease-in-out infinite;
+    z-index: 2;
+}
+
+.hero-decoration-4 {
+    bottom: 20%;
+    right: 20%;
+    width: 5rem;
+    height: 5rem;
+    animation: float 7s ease-in-out infinite;
+    z-index: 2;
+}
+
+/* How it works section decorations */
+.how-it-works-decoration-1 {
+    top: 10%;
+    left: 15%;
+    width: 4rem;
+    height: 4rem;
+    animation: pulse 6s ease-in-out infinite;
+}
+
+.how-it-works-decoration-2 {
+    bottom: 20%;
+    right: 20%;
+    width: 5rem;
+    height: 5rem;
+    animation: rotate 30s linear infinite;
+}
+
+.how-it-works-decoration-3 {
+    top: 40%;
+    right: 15%;
+    width: 3rem;
+    height: 3rem;
+    animation: float 8s ease-in-out infinite;
+}
+
+.how-it-works-decoration-4 {
+    bottom: 30%;
+    left: 25%;
+    width: 4rem;
+    height: 4rem;
+    animation: pulse 7s ease-in-out infinite;
+}
+
+/* Pricing section decorations */
+.pricing-decoration-1 {
+    top: 30%;
+    left: 8%;
+    width: 4rem;
+    height: 4rem;
+    animation: float 9s ease-in-out infinite;
+}
+
+.pricing-decoration-2 {
+    bottom: 15%;
+    right: 12%;
+    width: 5rem;
+    height: 5rem;
+    animation: pulse 8s ease-in-out infinite;
+}
+
+.pricing-decoration-3 {
+    top: 20%;
+    right: 25%;
+    width: 3rem;
+    height: 3rem;
+    animation: float 7s ease-in-out infinite;
+}
+
+.pricing-decoration-4 {
+    bottom: 40%;
+    left: 20%;
+    width: 4rem;
+    height: 4rem;
+    animation: rotate 25s linear infinite;
+}
+
+/* FAQ section decorations */
+.faq-decoration-1 {
+    top: 20%;
+    right: 15%;
+    width: 4rem;
+    height: 4rem;
+    animation: float 10s ease-in-out infinite;
+}
+
+.faq-decoration-2 {
+    bottom: 25%;
+    left: 10%;
+    width: 5rem;
+    height: 5rem;
+    animation: rotate 35s linear infinite;
+}
+
+.faq-decoration-3 {
+    top: 50%;
+    left: 30%;
+    width: 3rem;
+    height: 3rem;
+    animation: float 8s ease-in-out infinite;
+}
+
+.faq-decoration-4 {
+    bottom: 15%;
+    right: 30%;
+    width: 4rem;
+    height: 4rem;
+    animation: pulse 9s ease-in-out infinite;
+}
+
+/* Animations */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-15px) rotate(3deg);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 0.3;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 0.4;
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Parallax effect */
+.parallax {
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+    .pixel-decoration {
+        display: none;
+    }
+} 

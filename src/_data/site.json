@@ -1,11 +1,11 @@
 {
-  "name": "Blog Template",
+  "name": "GGShorts",
   "url": "https://vibecoding.com",
   "author": {
-    "name": "First Last",
+    "name": "Chaos Byte",
     "email": "hello@email.com"
   },
-  "description": "A blog website template built with 11ty.",
+  "description": "Turn Reddit Posts into Viral Short Videos",
   "social": {
     "twitter": "https://twitter.com",
     "youtube": "https://youtube.com",

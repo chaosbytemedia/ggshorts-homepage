@@ -4,25 +4,214 @@ layout: base.njk
 ---
 
 <section class="hero-section">
-    <div class="container columns">
-        <div class="col-2">
-            <h1>{{ site.name }}</h1>
-            <h2>{{ site.description }}</h2>
-        </div>
-        <div class="col-2">
-            <img src="/assets/img/undraw_bento-grid_qfc0.svg" alt="bento grid image">
+    <div class="video-background">
+        <video autoplay muted playsinline>
+            <source src="/assets/video/bg-video.mp4" type="video/mp4">
+        </video>
+        <div class="overlay"></div>
+        <button class="video-controls" aria-label="Pause video">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>
+            </svg>
+        </button>
+    </div>
+    <div class="container">
+        <div class="hero-content">
+            <h1>Reddit to Viral Video</h1>
+            <p class="hero-description">Create scroll-stopping videos from top Reddit content — perfect for TikTok, Reels, and YouTube Shorts.</p>
+            <a href="#get-started" class="cta-button mask-button">Get Started</a>
         </div>
     </div>
 </section>
 
-<section>
+<section class="how-it-works">
     <div class="container">
+        <h2 class="section-title">How It Works</h2>
+        <p class="section-description">Create engaging short-form video content in just a few simple steps</p>
+        
+        <div class="steps-grid">
+            <div class="step-card">
+                <div class="step-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48">
+                        <path fill="currentColor" d="M3 3h18v18H3V3zm16 16V5H5v14h14zM7 7h10v2H7V7zm0 4h10v2H7v-2zm0 4h7v2H7v-2z"/>
+                    </svg>
+                </div>
+                <h3>Step One</h3>
+                <h4>Find the Perfect Reddit Post</h4>
+                <p>Browse and search through top Reddit posts to find content that resonates with your audience.</p>
+            </div>
 
+            <div class="step-card">
+                <div class="step-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48">
+                        <path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/>
+                    </svg>
+                </div>
+                <h3>Step Two</h3>
+                <h4>Customize Your Video</h4>
+                <p>Choose from beautiful templates and customize text, animations and background music.</p>
+            </div>
+
+            <div class="step-card">
+                <div class="step-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48">
+                        <path fill="currentColor" d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>
+                    </svg>
+                </div>
+                <h3>Step Three</h3>
+                <h4>Export and Share</h4>
+                <p>Download your finished video and share it across all your social media platforms.</p>
+            </div>
+        </div>
+
+        <div class="cta-container">
+            <a href="/get-started" class="cta-button mask-button bg-secondary">Create Your First Video</a>
+        </div>
     </div>
 </section>
 
-<section>
+<section class="pricing">
     <div class="container">
+        <h2 class="section-title">Simple, Transparent Pricing</h2>
+        <p class="section-description">Choose the plan that works best for your content creation needs</p>
+        
+        <div class="pricing-grid">
+            <div class="pricing-card">
+                <div class="pricing-header">
+                    <svg width="48" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"> <path d="M12 1h2v8h8v4h-2v-2h-8V5h-2V3h2V1zM8 7V5h2v2H8zM6 9V7h2v2H6zm-2 2V9h2v2H4zm10 8v2h-2v2h-2v-8H2v-4h2v2h8v6h2zm2-2v2h-2v-2h2zm2-2v2h-2v-2h2zm0 0h2v-2h-2v2z" fill="var(--color-primary)"/> </svg>
+                    <h3>Starter</h3>
+                    <div class="price">
+                        <span class="amount">$15.99</span>
+                        <span class="period">/mo</span>
+                    </div>
+                </div>
+                <div class="pricing-features">
+                    <div class="feature">
+                        <svg fill="none" xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24"> <path d="M18 6h2v2h-2V6zm-2 4V8h2v2h-2zm-2 2v-2h2v2h-2zm-2 2h2v-2h-2v2zm-2 2h2v-2h-2v2zm-2 0v2h2v-2H8zm-2-2h2v2H6v-2zm0 0H4v-2h2v2z" fill="currentColor"/> </svg>
+                        <span>30 Video Tokens / month</span>
+                    </div>
+                    <div class="feature">
+                        <svg fill="none" xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24"> <path d="M18 6h2v2h-2V6zm-2 4V8h2v2h-2zm-2 2v-2h2v2h-2zm-2 2h2v-2h-2v2zm-2 2h2v-2h-2v2zm-2 0v2h2v-2H8zm-2-2h2v2H6v-2zm0 0H4v-2h2v2z" fill="currentColor"/> </svg>
+                        <span>All Templates</span>
+                    </div>
+                    <div class="feature">
+                        <svg fill="none" xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24"> <path d="M18 6h2v2h-2V6zm-2 4V8h2v2h-2zm-2 2v-2h2v2h-2zm-2 2h2v-2h-2v2zm-2 2h2v-2h-2v2zm-2 0v2h2v-2H8zm-2-2h2v2H6v-2zm0 0H4v-2h2v2z" fill="currentColor"/> </svg>
+                        <span>Basic Support</span>
+                    </div>
+                </div>
+                <a href="/get-started" class="pricing-cta">Get Started</a>
+            </div>
 
+            <div class="pricing-card featured">
+                <div class="pricing-header">
+                    <svg width="48" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"> <path d="M16 3H6v2H2v10h6V5h8v10h6V5h-4V3h-2zm4 4v6h-2V7h2zM6 13H4V7h2v6zm12 2H6v2h12v-2zm-7 2h2v2h3v2H8v-2h3v-2z" fill="var(--color-secondary)"/> </svg>
+                    <h3>Pro</h3>
+                    <div class="price">
+                        <span class="amount">$39.99</span>
+                        <span class="period">/mo</span>
+                    </div>
+                </div>
+                <div class="pricing-features">
+                    <div class="feature">
+                        <svg fill="none" xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24"> <path d="M18 6h2v2h-2V6zm-2 4V8h2v2h-2zm-2 2v-2h2v2h-2zm-2 2h2v-2h-2v2zm-2 2h2v-2h-2v2zm-2 0v2h2v-2H8zm-2-2h2v2H6v-2zm0 0H4v-2h2v2z" fill="currentColor"/> </svg>
+                        <span>60 Video Tokens / month</span>
+                    </div>
+                    <div class="feature">
+                        <svg fill="none" xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24"> <path d="M18 6h2v2h-2V6zm-2 4V8h2v2h-2zm-2 2v-2h2v2h-2zm-2 2h2v-2h-2v2zm-2 2h2v-2h-2v2zm-2 0v2h2v-2H8zm-2-2h2v2H6v-2zm0 0H4v-2h2v2z" fill="currentColor"/> </svg>
+                        <span>All Templates</span>
+                    </div>
+                    <div class="feature">
+                        <svg fill="none" xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24"> <path d="M18 6h2v2h-2V6zm-2 4V8h2v2h-2zm-2 2v-2h2v2h-2zm-2 2h2v-2h-2v2zm-2 2h2v-2h-2v2zm-2 0v2h2v-2H8zm-2-2h2v2H6v-2zm0 0H4v-2h2v2z" fill="currentColor"/> </svg>
+                        <span>Priority Support</span>
+                    </div>
+                    <div class="feature">
+                        <svg fill="none" xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24"> <path d="M18 6h2v2h-2V6zm-2 4V8h2v2h-2zm-2 2v-2h2v2h-2zm-2 2h2v-2h-2v2zm-2 2h2v-2h-2v2zm-2 0v2h2v-2H8zm-2-2h2v2H6v-2zm0 0H4v-2h2v2z" fill="currentColor"/> </svg>
+                        <span>Advanced Analytics</span>
+                    </div>
+                </div>
+                <a href="/get-started" class="pricing-cta">Get Started</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="faq">
+    <div class="container">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-description">Everything you need to know about creating viral videos from Reddit content</p>
+        
+        <div class="faq-grid">
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>What are Video Tokens?</span>
+                    <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                        <path fill="currentColor" d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/>
+                    </svg>
+                </button>
+                <div class="faq-answer">
+                    <p>Video Tokens are credits that allow you to create and export videos. Each video you create and export uses one token. Tokens are refreshed monthly based on your subscription plan.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>Can I use any Reddit content?</span>
+                    <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                        <path fill="currentColor" d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/>
+                    </svg>
+                </button>
+                <div class="faq-answer">
+                    <p>You can use any public Reddit content that follows our content guidelines. We recommend using posts that are engaging, have good discussion, and are appropriate for your target audience.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>What video formats are supported?</span>
+                    <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                        <path fill="currentColor" d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/>
+                    </svg>
+                </button>
+                <div class="faq-answer">
+                    <p>We support all major short-form video formats including MP4, MOV, and WebM. Videos are optimized for TikTok, Instagram Reels, and YouTube Shorts with the correct aspect ratios and quality settings.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>Can I customize the video templates?</span>
+                    <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                        <path fill="currentColor" d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/>
+                    </svg>
+                </button>
+                <div class="faq-answer">
+                    <p>Yes! All plans include access to our template library. You can customize text, colors, animations, background music, and more to match your brand and style.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>What kind of support do you offer?</span>
+                    <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                        <path fill="currentColor" d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/>
+                    </svg>
+                </button>
+                <div class="faq-answer">
+                    <p>Starter plan users have access to our help center and email support. Pro plan users get priority support with faster response times and access to our advanced analytics dashboard.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>Can I cancel my subscription anytime?</span>
+                    <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                        <path fill="currentColor" d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/>
+                    </svg>
+                </button>
+                <div class="faq-answer">
+                    <p>Yes, you can cancel your subscription at any time. Your access will continue until the end of your current billing period, and you'll keep all your created videos.</p>
+                </div>
+            </div>
+        </div>
     </div>
 </section>

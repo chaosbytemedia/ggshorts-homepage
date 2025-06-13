@@ -1,8 +1,10 @@
-:root {
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&family=Silkscreen:wght@400;700&display=swap');
 
+:root {
     /* Fonts */
-    --font-family-header: Impact, Arial Black, Arial, sans-serif;
-    --font-family-body: system-ui, sans-serif;
+    --font-family-header: "Handjet", sans-serif;
+    --font-family-subheader: "Silkscreen", sans-serif;
+    --font-family-body: Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', source-sans-pro, sans-serif;
 
     --font-size-base: 1.6rem; /* 16px body text */
 
@@ -26,20 +28,20 @@
     --line-height-body: 1.6;
 
     /* Brand Colors */
-    /* Primary - Soft Teal */
-    --color-primary-light: #a8dedd;
-    --color-primary:       #4cafad;
-    --color-primary-dark:  #357f7f;
+    /* Primary (Green) */
+    --color-primary-light: #A7E8A1; /* Soft mint green */
+    --color-primary:       #3CBC1C; /* Base bright green */
+    --color-primary-dark:  #2D8A14; /* Rich dark green */
 
-    /* Secondary - Warm Peach */
-    --color-secondary-light: #ffe0b3;
-    --color-secondary:       #ffb85f;
-    --color-secondary-dark:  #cc8c32;
+    /* Secondary (Lime/Yellow-Green) */
+    --color-secondary-light: #F6F9C4;
+    --color-secondary:       #D9E84A;
+    --color-secondary-dark:  #B0C236;
 
-    /* Accent - Coral Red/Pink */
-    --color-accent-light: #ff9c9c;
-    --color-accent:       #ff6b6b;
-    --color-accent-dark:  #cc3d3d;
+    /* Accent (Punchy Orange-Red for contrast) */
+    --color-accent-light: #FFBCB0;
+    --color-accent:       #FF6A4D;
+    --color-accent-dark:  #CC3E2A;
 
     /* Grays */
     --gray-100: #f9f9f9;
@@ -53,9 +55,9 @@
     --gray-900: #1a1a1a;
 
     /* Backgrounds & Text */
-    --color-background: var(--gray-100);
+    --color-background: #000000;
     --color-surface: #ffffff;
-    --color-text: #1a1a1a;
+    --color-text: var(--gray-100);
     --color-muted: var(--gray-600);
 }
 

@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home | Blog Template</title>
-  <meta name="description" content="A blog website template built with 11ty.">
+  <title>Home | GGShorts</title>
+  <meta name="description" content="Turn Reddit Posts into Viral Short Videos">
   
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="/assets/favicon/favicon.svg">
@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="/css/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism-themes/1.9.0/prism-one-dark.min.css">
   <script src="/js/theme.js" defer></script>
+  <script src="/js/scripts.js" defer></script>
 </head>
 <body>
   
@@ -21,13 +22,15 @@
       <div class="container">
         <nav>
           <div class="logo">
-            <a href="/">Blog Template</a>
+            <svg fill="none" xmlns="http://www.w3.org/2000/svg" width="40" viewBox="0 0 24 24"> <path d="M2 5h14v4h2V7h2V5h2v14h-2v-2h-2v-2h-2v4H2V5zm2 12h10V7H4v10z" fill="currentColor"/> </svg>
+            <a href="/">GGShorts</a>
           </div>
-          <ul role="list">
-            <li><a href="/">Home</a></li>
-            <li><a href="/">About</a></li>
-            <li><a href="/">Blog</a></li>
-            <li><a href="/">Contact</a></li>
+          <ul class="nav-links" role="list">
+            <li><a href="/about" class="nav-link">About</a></li>
+            <li><a href="/pricing" class="nav-link">Pricing</a></li>
+            <li><a href="/faq" class="nav-link">FAQ</a></li>
+            <li><a href="/get-started" class="nav-link nav-button">Get Started</a></li>
+            <li><a href="/login" class="nav-link">Login</a></li>
           </ul>
         </nav>
       </div>
@@ -36,60 +39,287 @@
   <main class="content">
     
 <section class="hero-section">
-    <div class="container columns">
-        <div class="col-2">
-            <h1>Blog Template</h1>
-            <h2>A blog website template built with 11ty.</h2>
-        </div>
-        <div class="col-2">
-            <img src="/assets/img/undraw_bento-grid_qfc0.svg" alt="bento grid image">
+    <div class="video-background">
+        <video autoplay muted playsinline>
+            <source src="/assets/video/bg-video.mp4" type="video/mp4">
+        </video>
+        <div class="overlay"></div>
+        <button class="video-controls" aria-label="Pause video">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>
+            </svg>
+        </button>
+    </div>
+    <div class="container">
+        <div class="hero-content">
+            <h1>Reddit to Viral Video</h1>
+            <p class="hero-description">Create scroll-stopping videos from top Reddit content — perfect for TikTok, Reels, and YouTube Shorts.</p>
+            <a href="#get-started" class="cta-button mask-button">Get Started</a>
         </div>
     </div>
 </section>
 
-<section>
+<section class="how-it-works">
     <div class="container">
+        <h2 class="section-title">How It Works</h2>
+        <p class="section-description">Create engaging short-form video content in just a few simple steps</p>
+        
+        <div class="steps-grid">
+            <div class="step-card">
+                <div class="step-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48">
+                        <path fill="currentColor" d="M3 3h18v18H3V3zm16 16V5H5v14h14zM7 7h10v2H7V7zm0 4h10v2H7v-2zm0 4h7v2H7v-2z"/>
+                    </svg>
+                </div>
+                <h3>Step One</h3>
+                <h4>Find the Perfect Reddit Post</h4>
+                <p>Browse and search through top Reddit posts to find content that resonates with your audience.</p>
+            </div>
 
+            <div class="step-card">
+                <div class="step-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48">
+                        <path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/>
+                    </svg>
+                </div>
+                <h3>Step Two</h3>
+                <h4>Customize Your Video</h4>
+                <p>Choose from beautiful templates and customize text, animations and background music.</p>
+            </div>
+
+            <div class="step-card">
+                <div class="step-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48">
+                        <path fill="currentColor" d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>
+                    </svg>
+                </div>
+                <h3>Step Three</h3>
+                <h4>Export and Share</h4>
+                <p>Download your finished video and share it across all your social media platforms.</p>
+            </div>
+        </div>
+
+        <div class="cta-container">
+            <a href="/get-started" class="cta-button mask-button bg-secondary">Create Your First Video</a>
+        </div>
     </div>
 </section>
 
-<section>
+<section class="pricing">
     <div class="container">
+        <h2 class="section-title">Simple, Transparent Pricing</h2>
+        <p class="section-description">Choose the plan that works best for your content creation needs</p>
+        
+        <div class="pricing-grid">
+            <div class="pricing-card">
+                <div class="pricing-header">
+                    <svg width="48" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"> <path d="M12 1h2v8h8v4h-2v-2h-8V5h-2V3h2V1zM8 7V5h2v2H8zM6 9V7h2v2H6zm-2 2V9h2v2H4zm10 8v2h-2v2h-2v-8H2v-4h2v2h8v6h2zm2-2v2h-2v-2h2zm2-2v2h-2v-2h2zm0 0h2v-2h-2v2z" fill="var(--color-primary)"/> </svg>
+                    <h3>Starter</h3>
+                    <div class="price">
+                        <span class="amount">$15.99</span>
+                        <span class="period">/mo</span>
+                    </div>
+                </div>
+                <div class="pricing-features">
+                    <div class="feature">
+                        <svg fill="none" xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24"> <path d="M18 6h2v2h-2V6zm-2 4V8h2v2h-2zm-2 2v-2h2v2h-2zm-2 2h2v-2h-2v2zm-2 2h2v-2h-2v2zm-2 0v2h2v-2H8zm-2-2h2v2H6v-2zm0 0H4v-2h2v2z" fill="currentColor"/> </svg>
+                        <span>30 Video Tokens / month</span>
+                    </div>
+                    <div class="feature">
+                        <svg fill="none" xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24"> <path d="M18 6h2v2h-2V6zm-2 4V8h2v2h-2zm-2 2v-2h2v2h-2zm-2 2h2v-2h-2v2zm-2 2h2v-2h-2v2zm-2 0v2h2v-2H8zm-2-2h2v2H6v-2zm0 0H4v-2h2v2z" fill="currentColor"/> </svg>
+                        <span>All Templates</span>
+                    </div>
+                    <div class="feature">
+                        <svg fill="none" xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24"> <path d="M18 6h2v2h-2V6zm-2 4V8h2v2h-2zm-2 2v-2h2v2h-2zm-2 2h2v-2h-2v2zm-2 2h2v-2h-2v2zm-2 0v2h2v-2H8zm-2-2h2v2H6v-2zm0 0H4v-2h2v2z" fill="currentColor"/> </svg>
+                        <span>Basic Support</span>
+                    </div>
+                </div>
+                <a href="/get-started" class="pricing-cta">Get Started</a>
+            </div>
 
+            <div class="pricing-card featured">
+                <div class="pricing-header">
+                    <svg width="48" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"> <path d="M16 3H6v2H2v10h6V5h8v10h6V5h-4V3h-2zm4 4v6h-2V7h2zM6 13H4V7h2v6zm12 2H6v2h12v-2zm-7 2h2v2h3v2H8v-2h3v-2z" fill="var(--color-secondary)"/> </svg>
+                    <h3>Pro</h3>
+                    <div class="price">
+                        <span class="amount">$39.99</span>
+                        <span class="period">/mo</span>
+                    </div>
+                </div>
+                <div class="pricing-features">
+                    <div class="feature">
+                        <svg fill="none" xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24"> <path d="M18 6h2v2h-2V6zm-2 4V8h2v2h-2zm-2 2v-2h2v2h-2zm-2 2h2v-2h-2v2zm-2 2h2v-2h-2v2zm-2 0v2h2v-2H8zm-2-2h2v2H6v-2zm0 0H4v-2h2v2z" fill="currentColor"/> </svg>
+                        <span>60 Video Tokens / month</span>
+                    </div>
+                    <div class="feature">
+                        <svg fill="none" xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24"> <path d="M18 6h2v2h-2V6zm-2 4V8h2v2h-2zm-2 2v-2h2v2h-2zm-2 2h2v-2h-2v2zm-2 2h2v-2h-2v2zm-2 0v2h2v-2H8zm-2-2h2v2H6v-2zm0 0H4v-2h2v2z" fill="currentColor"/> </svg>
+                        <span>All Templates</span>
+                    </div>
+                    <div class="feature">
+                        <svg fill="none" xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24"> <path d="M18 6h2v2h-2V6zm-2 4V8h2v2h-2zm-2 2v-2h2v2h-2zm-2 2h2v-2h-2v2zm-2 2h2v-2h-2v2zm-2 0v2h2v-2H8zm-2-2h2v2H6v-2zm0 0H4v-2h2v2z" fill="currentColor"/> </svg>
+                        <span>Priority Support</span>
+                    </div>
+                    <div class="feature">
+                        <svg fill="none" xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24"> <path d="M18 6h2v2h-2V6zm-2 4V8h2v2h-2zm-2 2v-2h2v2h-2zm-2 2h2v-2h-2v2zm-2 2h2v-2h-2v2zm-2 0v2h2v-2H8zm-2-2h2v2H6v-2zm0 0H4v-2h2v2z" fill="currentColor"/> </svg>
+                        <span>Advanced Analytics</span>
+                    </div>
+                </div>
+                <a href="/get-started" class="pricing-cta">Get Started</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="faq">
+    <div class="container">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-description">Everything you need to know about creating viral videos from Reddit content</p>
+        
+        <div class="faq-grid">
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>What are Video Tokens?</span>
+                    <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                        <path fill="currentColor" d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/>
+                    </svg>
+                </button>
+                <div class="faq-answer">
+                    <p>Video Tokens are credits that allow you to create and export videos. Each video you create and export uses one token. Tokens are refreshed monthly based on your subscription plan.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>Can I use any Reddit content?</span>
+                    <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                        <path fill="currentColor" d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/>
+                    </svg>
+                </button>
+                <div class="faq-answer">
+                    <p>You can use any public Reddit content that follows our content guidelines. We recommend using posts that are engaging, have good discussion, and are appropriate for your target audience.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>What video formats are supported?</span>
+                    <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                        <path fill="currentColor" d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/>
+                    </svg>
+                </button>
+                <div class="faq-answer">
+                    <p>We support all major short-form video formats including MP4, MOV, and WebM. Videos are optimized for TikTok, Instagram Reels, and YouTube Shorts with the correct aspect ratios and quality settings.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>Can I customize the video templates?</span>
+                    <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                        <path fill="currentColor" d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/>
+                    </svg>
+                </button>
+                <div class="faq-answer">
+                    <p>Yes! All plans include access to our template library. You can customize text, colors, animations, background music, and more to match your brand and style.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>What kind of support do you offer?</span>
+                    <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                        <path fill="currentColor" d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/>
+                    </svg>
+                </button>
+                <div class="faq-answer">
+                    <p>Starter plan users have access to our help center and email support. Pro plan users get priority support with faster response times and access to our advanced analytics dashboard.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>Can I cancel my subscription anytime?</span>
+                    <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                        <path fill="currentColor" d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/>
+                    </svg>
+                </button>
+                <div class="faq-answer">
+                    <p>Yes, you can cancel your subscription at any time. Your access will continue until the end of your current billing period, and you'll keep all your created videos.</p>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
   </main>
   
   <footer class="site-footer">
-    <div class="container columns">  
-      <div class="col-2">      
-        <div class="logo">Blog Template</div>
-        <p>A blog website template built with 11ty.</p>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo">GGShorts</div>
+          <p>Create engaging short-form videos from Reddit content — perfect for TikTok, Reels, and YouTube Shorts.</p>
+        </div>
+
+        <div class="footer-links">
+          <h3>Product</h3>
+          <ul role="list">
+            <li><a href="/features">Features</a></li>
+            <li><a href="/pricing">Pricing</a></li>
+            <li><a href="/templates">Templates</a></li>
+            <li><a href="/faq">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h3>Company</h3>
+          <ul role="list">
+            <li><a href="/about">About</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h3>Legal</h3>
+          <ul role="list">
+            <li><a href="/privacy">Privacy Policy</a></li>
+            <li><a href="/terms">Terms of Service</a></li>
+            <li><a href="/cookies">Cookie Policy</a></li>
+            <li><a href="/guidelines">Content Guidelines</a></li>
+          </ul>
+        </div>
       </div>
 
-      <div class="col-4">
-        <h3>Site Links</h3>
-        <ul role="list">
-          <li><a href="/">Home</a></li>
-          <li><a href="/">About</a></li>
-          <li><a href="/">Blog</a></li>
-          <li><a href="/">Contact</a></li>
-        </ul>
+      <div class="footer-bottom">
+        <div class="copyright">
+          ©  GGShorts. All rights reserved.
+        </div>
+        <div class="social-links">
+          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/>
+            </svg>
+          </a>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+            </svg>
+          </a>
+          <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/>
+              <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/>
+            </svg>
+          </a>
+        </div>
       </div>
-
-      <div class="col-4">
-        <h3>Contact</h3>
-        <ul role="list">
-          <li><a href="/">Home</a></li>
-          <li><a href="/">About</a></li>
-          <li><a href="/">Blog</a></li>
-          <li><a href="/">Contact</a></li>
-        </ul>
-      </div>
-
     </div>
   </footer>
   
   <script src="/js/app.js" defer></script>
+  <script src="/js/faq.js"></script>
+  <script src="/js/scroll-animations.js"></script>
 </body>
 </html>
