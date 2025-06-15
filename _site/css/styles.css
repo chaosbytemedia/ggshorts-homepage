@@ -1073,3 +1073,77 @@ section.hero-section h1 {
     position: relative;
     z-index: 2;
 }
+
+.policy-section {
+    padding: 12rem 0 8rem;
+    min-height: 100vh;
+    background-color: var(--color-background);
+}
+
+.policy-content {
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 4rem;
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 1.2rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.policy-content h1 {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.policy-content h2 {
+    font-size: var(--font-size-h3);
+    margin: 3.2rem 0 1.6rem;
+    color: var(--color-primary);
+}
+
+.policy-content h3 {
+    font-size: var(--font-size-h4);
+    margin: 2.4rem 0 1.2rem;
+    color: var(--color-text);
+}
+
+.policy-content p {
+    margin-bottom: 1.6rem;
+    line-height: 1.6;
+    color: var(--color-text);
+}
+
+.policy-content ul {
+    margin: 1.6rem 0;
+    padding-left: 2.4rem;
+}
+
+.policy-content li {
+    margin-bottom: 0.8rem;
+    line-height: 1.6;
+    color: var(--color-text);
+}
+
+.last-updated {
+    text-align: center;
+    color: var(--gray-600);
+    margin-bottom: 4rem;
+    font-size: var(--font-size-h5);
+}
+
+@media (max-width: 768px) {
+    .policy-section {
+        padding: 8rem 0 4rem;
+    }
+
+    .policy-content {
+        padding: 2.4rem;
+    }
+
+    .policy-content h2 {
+        font-size: var(--font-size-h4);
+    }
+
+    .policy-content h3 {
+        font-size: var(--font-size-h5);
+    }
+}
