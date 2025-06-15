@@ -1147,3 +1147,130 @@ section.hero-section h1 {
         font-size: var(--font-size-h5);
     }
 }
+
+/* Contact Page Styles */
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    margin-top: 2rem;
+}
+
+.contact-info {
+    padding-right: 2rem;
+}
+
+.contact-methods {
+    margin: 3.2rem 0;
+}
+
+.contact-method {
+    margin-bottom: 2.4rem;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 0.8rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.contact-method h3 {
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+}
+
+.contact-method p {
+    margin: 0.4rem 0;
+    color: var(--color-text);
+}
+
+.social-links {
+    margin-top: 4rem;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1.6rem;
+    margin-top: 1.6rem;
+}
+
+.social-icon {
+    color: var(--color-text);
+    text-decoration: none;
+    padding: 0.8rem 1.6rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0.4rem;
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    color: var(--color-primary);
+    border-color: var(--color-primary);
+    transform: translateY(-2px);
+}
+
+/* Form Styles */
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.form-group label {
+    color: var(--color-text);
+    font-size: var(--font-size-h5);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    padding: 1.2rem;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0.4rem;
+    color: var(--color-text);
+    font-size: var(--font-size-h5);
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 12rem;
+}
+
+.form .cta-button {
+    margin-top: 1rem;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 3.2rem;
+    }
+
+    .contact-info {
+        padding-right: 0;
+    }
+
+    .social-icons {
+        flex-wrap: wrap;
+    }
+}
+
+/* Make contact page content wider */
+.contact-page .policy-content {
+    max-width: 96rem;
+}
