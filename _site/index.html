@@ -14,12 +14,23 @@
   
   <link rel="stylesheet" href="/css/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism-themes/1.9.0/prism-one-dark.min.css">
-  <script src="/js/theme.js" defer></script>
+  
   <script src="/js/scripts.js" defer></script>
 </head>
 <body>
-  
-  <header class="site-header">
+    <div class="floating-squares">
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+    </div>
+    <header class="site-header">
       <div class="container">
         <nav>
           <div class="logo">
@@ -27,14 +38,14 @@
             <a href="/">GGShorts</a>
           </div>
           <ul class="nav-links" role="list">
-            <li><a href="/about" class="nav-link">About</a></li>
-            <li><a href="/pricing" class="nav-link">Pricing</a></li>
-            <li><a href="/faq" class="nav-link">FAQ</a></li>
+            <li><a href="#features" class="nav-link">Features</a></li>
+            <li><a href="#pricing" class="nav-link">Pricing</a></li>
+            <li><a href="#faq" class="nav-link">FAQ</a></li>
             <li><a href="/get-started" class="nav-link nav-button">Get Started</a></li>
           </ul>
         </nav>
       </div>
-  </header>
+    </header>
   
   <main class="content">
     
@@ -64,48 +75,48 @@
         <h2 class="section-title">Featured Videos</h2>
         <p class="section-description">Check out some of our most popular video creations</p>
     </div>
-            <div class="gallery-container">
-            <div class="gallery-grid">
-                <div class="video-card">
-                    <video autoplay loop muted playsinline controls="false">
-                        <source src="/assets/video/gallery/video1.mp4" type="video/mp4">
-                    </video>
-                </div>
-                <div class="video-card">
-                    <video autoplay loop muted playsinline>
-                        <source src="/assets/video/gallery/video2.mp4" type="video/mp4">
-                    </video>
-                </div>
-                <div class="video-card">
-                    <video autoplay loop muted playsinline>
-                        <source src="/assets/video/gallery/video3.mp4" type="video/mp4">
-                    </video>
-                </div>
-                <div class="video-card">
-                    <video autoplay loop muted playsinline >
-                        <source src="/assets/video/gallery/video4.mp4" type="video/mp4">
-                    </video>
-                </div>
-                <div class="video-card">
-                    <video autoplay loop muted playsinline >
-                        <source src="/assets/video/gallery/video5.mp4" type="video/mp4">
-                    </video>
-                </div>
-                <div class="video-card">
-                    <video autoplay loop muted playsinline >
-                        <source src="/assets/video/gallery/video6.mp4" type="video/mp4">
-                    </video>
-                </div>
-                <div class="video-card">
-                    <video autoplay loop muted playsinline >
-                        <source src="/assets/video/gallery/video7.mp4" type="video/mp4">
-                    </video>
-                </div>
+    <div class="gallery-container">
+        <div class="gallery-grid">
+            <div class="video-card">
+                <video autoplay loop muted playsinline controls="false">
+                    <source src="/assets/video/gallery/video1.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="video-card">
+                <video autoplay loop muted playsinline>
+                    <source src="/assets/video/gallery/video2.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="video-card">
+                <video autoplay loop muted playsinline>
+                    <source src="/assets/video/gallery/video3.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="video-card">
+                <video autoplay loop muted playsinline >
+                    <source src="/assets/video/gallery/video4.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="video-card">
+                <video autoplay loop muted playsinline >
+                    <source src="/assets/video/gallery/video5.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="video-card">
+                <video autoplay loop muted playsinline >
+                    <source src="/assets/video/gallery/video6.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="video-card">
+                <video autoplay loop muted playsinline >
+                    <source src="/assets/video/gallery/video7.mp4" type="video/mp4">
+                </video>
             </div>
         </div>
+    </div>
 </section>
 
-<section class="how-it-works">
+<section id="features" class="how-it-works">
     <div class="container">
         <h2 class="section-title">How It Works</h2>
         <p class="section-description">Create engaging short-form video content in just a few simple steps</p>
@@ -151,7 +162,7 @@
     </div>
 </section>
 
-<section class="pricing">
+<section id="pricing" class="pricing">
     <div class="container">
         <h2 class="section-title">Simple, Transparent Pricing</h2>
         <p class="section-description">Choose the plan that works best for your content creation needs</p>
@@ -216,7 +227,7 @@
     </div>
 </section>
 
-<section class="faq">
+<section id="faq" class="faq">
     <div class="container">
         <h2 class="section-title">Frequently Asked Questions</h2>
         <p class="section-description">Everything you need to know about creating viral videos from Reddit content</p>
@@ -309,9 +320,9 @@
         <div class="footer-links">
           <h3>Product</h3>
           <ul role="list">
-            <li><a href="/features">Features</a></li>
-            <li><a href="/pricing">Pricing</a></li>
-            <li><a href="/faq">FAQ</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#faq">FAQ</a></li>
           </ul>
         </div>
 
@@ -362,7 +373,6 @@
     </div>
   </footer>
   
-  <script src="/js/app.js" defer></script>
   <script src="/js/faq.js"></script>
   <script src="/js/scroll-animations.js"></script>
 </body>
