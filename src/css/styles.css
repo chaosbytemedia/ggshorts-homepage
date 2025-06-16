@@ -1173,7 +1173,7 @@ section.hero-section h1 {
 .policy-section {
     padding: 12rem 0 8rem;
     min-height: 100vh;
-    background-color: var(--color-background);
+    background-color: #ffffff;
 }
 
 .policy-content {
@@ -1188,6 +1188,7 @@ section.hero-section h1 {
 .policy-content h1 {
     text-align: center;
     margin-bottom: 4rem;
+    color: #1a1a1a;
 }
 
 .policy-content h2 {
@@ -1199,13 +1200,13 @@ section.hero-section h1 {
 .policy-content h3 {
     font-size: var(--font-size-h4);
     margin: 2.4rem 0 1.2rem;
-    color: var(--color-text);
+    color: #1a1a1a;
 }
 
 .policy-content p {
     margin-bottom: 1.6rem;
     line-height: 1.6;
-    color: var(--color-text);
+    color: #1a1a1a;
 }
 
 .policy-content ul {
@@ -1216,12 +1217,12 @@ section.hero-section h1 {
 .policy-content li {
     margin-bottom: 0.8rem;
     line-height: 1.6;
-    color: var(--color-text);
+    color: #1a1a1a;
 }
 
 .last-updated {
     text-align: center;
-    color: var(--gray-600);
+    color: #666666;
     margin-bottom: 4rem;
     font-size: var(--font-size-h5);
 }
@@ -1275,7 +1276,7 @@ section.hero-section h1 {
 
 .contact-method p {
     margin: 0.4rem 0;
-    color: var(--color-text);
+    color: #1a1a1a;
 }
 
 .social-links {
@@ -1289,7 +1290,7 @@ section.hero-section h1 {
 }
 
 .social-icon {
-    color: var(--color-text);
+    color: #1a1a1a;
     text-decoration: none;
     padding: 0.8rem 1.6rem;
     border: 1px solid rgba(0, 0, 0, 0.1);
@@ -1317,7 +1318,7 @@ section.hero-section h1 {
 }
 
 .form-group label {
-    color: var(--color-text);
+    color: #1a1a1a;
     font-size: var(--font-size-h5);
 }
 
@@ -1349,21 +1350,6 @@ section.hero-section h1 {
 .form .cta-button {
     margin-top: 1rem;
     width: 100%;
-}
-
-@media (max-width: 768px) {
-    .contact-grid {
-        grid-template-columns: 1fr;
-        gap: 3.2rem;
-    }
-
-    .contact-info {
-        padding-right: 0;
-    }
-
-    .social-icons {
-        flex-wrap: wrap;
-    }
 }
 
 /* Make contact page content wider */
