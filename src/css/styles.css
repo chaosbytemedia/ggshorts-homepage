@@ -170,7 +170,8 @@ section.hero-section::after {
     position: absolute;
     top: 100%;
     left: 0;
-    width: 100%;
+    min-width: 100%;
+    width: 1700px;
     height: 3rem;
     background: #191918;
     mask-image: url(../assets/img/hero-section-mask.png);
