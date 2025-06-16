@@ -1055,12 +1055,12 @@ section.hero-section h1 {
 
 .gallery-container::before {
     left: 0;
-    background: linear-gradient(to right, var(--color-background), transparent);
+    background: linear-gradient(to right, var(--color-white), transparent);
 }
 
 .gallery-container::after {
     right: 0;
-    background: linear-gradient(to left, var(--color-background), transparent);
+    background: linear-gradient(to left, var(--color-white), transparent);
 }
 
 .gallery-grid {
