@@ -55,6 +55,7 @@
     --gray-900: #1a1a1a;
 
     /* Backgrounds & Text */
+    --color-white: #ffffff;
     --color-background: #000000;
     --color-surface: #ffffff;
     --color-text: var(--gray-100);
