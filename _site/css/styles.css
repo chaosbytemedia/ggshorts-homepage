@@ -115,6 +115,30 @@ h6 { font-size: var(--font-size-h6); }
     gap: 0.4rem;
 }
 
+.logo span.gg {
+    color: var(--color-white);
+    text-shadow: 4px 4px 0 var(--color-secondary), 2px 2px 0 var(--color-primary), -2px -2px 0 var(--color-primary);
+    animation: shadowShift 4s ease-in-out infinite;
+}
+
+@keyframes shadowShift {
+    0% {
+        text-shadow: 4px 4px 0 var(--color-secondary), 2px 2px 0 var(--color-primary), -2px -2px 0 var(--color-primary);
+    }
+    25% {
+        text-shadow: -4px 4px 0 var(--color-secondary), -2px 2px 0 var(--color-primary), 2px -2px 0 var(--color-primary);
+    }
+    50% {
+        text-shadow: 4px -4px 0 var(--color-secondary), 2px -2px 0 var(--color-primary), -2px 2px 0 var(--color-primary);
+    }
+    75% {
+        text-shadow: -4px -4px 0 var(--color-secondary), -2px -2px 0 var(--color-primary), 2px 2px 0 var(--color-primary);
+    }
+    100% {
+        text-shadow: 4px 4px 0 var(--color-secondary), 2px 2px 0 var(--color-primary), -2px -2px 0 var(--color-primary);
+    }
+}
+
 .logo svg {
     color: var(--color-primary);
 }
@@ -402,15 +426,16 @@ section.hero-section h1 {
 }
 
 .nav-button {
-    background-color: var(--color-primary);
-    color: var(--color-background) !important;
+    background-color: var(--color-secondary);
+    color: var(--color-white) !important;
+    font-weight: var(--font-weight-semibold);
     padding: 0.8rem 1.6rem;
     border-radius: 0.4rem;
     transition: all 0.2s ease !important;
 }
 
 .nav-button:hover {
-    background-color: var(--color-primary-dark);
+    background-color: var(--color-secondary-dark);
     transform: translateY(-1px);
 }
 
@@ -605,7 +630,7 @@ section.hero-section h1 {
     top: 0;
     right: 0;
     background: var(--color-secondary);
-    color: var(--color-background);
+    color: var(--color-white);
     padding: 0.8rem 1.6rem;
     font-size: var(--font-size-h6);
     font-weight: var(--font-weight-bold);
@@ -639,7 +664,7 @@ section.hero-section h1 {
 
 .amount {
     font-weight: var(--font-weight-bold);
-    color: var(--color-primary);
+    color: #fff;
 }
 
 .period {
@@ -687,6 +712,7 @@ section.hero-section h1 {
 
 .featured .pricing-cta {
     background-color: var(--color-secondary);
+    color: var(--color-white) !important;
 }
 
 .featured .pricing-cta:hover {
@@ -979,6 +1005,9 @@ section.hero-section h1 {
 /* Helpers */
 .bg-secondary {
     background-color: var(--color-secondary) !important;
+}
+.cta-button.bg-secondary {
+    color: white !important;
 }
 
 .bg-primary {
